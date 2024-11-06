@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Desenvolvedor Cadastra
 
 Este projeto foi desenvolvido utilizando React com TypeScript (TSX) e é configurado para rodar com Node.js v14+.
 
@@ -10,10 +10,10 @@ O projeto foi desenvolvido em Node.js na versão v14.17.3.
 
 Para rodar o projeto localmente, siga os passos abaixo:
 
-1. 
+## 1. 
 npm install
 
-2. 
+## 2. 
 npm start
 Ao rodar o npm start, o projeto será iniciado com o servidor local em localhost:3000 e localhost:5000.
 
@@ -22,4 +22,5 @@ Todo o código e imagens do projeto são processados e direcionados para a pasta
 
 ## Contato
 hugogendelopez@yahoo.com.br
+
 https://github.com/hugolopezz
