@@ -124,18 +124,18 @@ const ProductCatalog = () => {
             />
           </div>
 
-          {["Cores", "Tamanhos"].map((filterType) => (
+          {["CORES", "TAMANHOS"].map((filterType) => (
             <div key={filterType} className="filter">
               <h3>{filterType}</h3>
               <div
                 className={
-                  "options " + (filterType === "Cores" ? "colors" : "sizes")
+                  "options " + (filterType === "CORES" ? "colors" : "sizes")
                 }
               >
                 {Array.from(
                   new Set(
                     productItems.flatMap((product) =>
-                      filterType === "Cores" ? product.color : product.size
+                      filterType === "CORES" ? product.color : product.size
                     )
                   )
                 ).map((option) => (
@@ -143,15 +143,16 @@ const ProductCatalog = () => {
                     <input
                       type="checkbox"
                       value={option}
+                      className="checkbox-custom"
                       checked={
-                        filterType === "Cores"
+                        filterType === "CORES"
                           ? filters.selectedColors.includes(option)
                           : filters.selectedSizes.includes(option)
                       }
                       onChange={() =>
                         toggleSelection(
                           option,
-                          filterType === "Cores"
+                          filterType === "CORES"
                             ? "selectedColors"
                             : "selectedSizes"
                         )
@@ -165,8 +166,9 @@ const ProductCatalog = () => {
           ))}
 
           <div className="filter">
-            <h3>Preço Range</h3>
+            <h3>FAIXA DE PREÇO</h3>
             <input
+            id="range"
               type="range"
               min={filters.minPrice}
               max={filters.highestPrice}
@@ -176,7 +178,7 @@ const ProductCatalog = () => {
               }
               step="10"
             />
-            <div>{formatValue(filters.maxPrice)}</div>
+            <div className="valueRange">{formatValue(filters.maxPrice)}</div>
           </div>
         </aside>
         <div className="filters__section--mobile">

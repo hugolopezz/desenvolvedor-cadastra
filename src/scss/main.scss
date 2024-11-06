@@ -262,6 +262,36 @@ body {
               }
             }
           }
+
+          #range {
+            -webkit-appearance: none; 
+            appearance: none;
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+          }
+
+          #range::-webkit-slider-thumb {
+            width: 20px;
+            height: 20px;
+            background: var(--black); 
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            -webkit-appearance: none; 
+            position: relative;
+            top: -5px;
+          }
+        
+
+          #range::-webkit-slider-runnable-track {
+            height: 8px;
+            background: var(--primary); 
+            border-radius: 5px;
+          }
+          .valueRange {
+            margin-top: 8px;
+          }
         }
 
         .filter-colors {
@@ -276,38 +306,8 @@ body {
             }
           }
         }
-
-        .filter-sizes {
-          .options {
-            label {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 40px;
-              height: 40px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              font-weight: bold;
-              cursor: pointer;
-              color: var(--dark-gray);
-              text-align: center;
-
-              input {
-                display: none;
-              }
-
-              &.selected,
-              input:checked + & {
-                border-color: orange;
-                color: orange;
-              }
-
-              &:hover {
-                border-color: #666;
-              }
-            }
-          }
-        }
+        
+        
 
         .filter-price {
           input[type="range"] {
