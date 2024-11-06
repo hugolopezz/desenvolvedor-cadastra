@@ -1,0 +1,21 @@
+header.header {
+  border-bottom: 2px solid #c7c7c7;
+
+  .header__center {
+    max-width: 1154px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 62px;
+    .logo {
+      img {
+        width: 165px;
+        height: 25px;
+      }
+    }
+    @media (max-width: 1024px) {
+      padding: 0 16px;
+    }
+  }
+}

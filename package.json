@@ -1,9 +1,9 @@
 {
-n  "version": "1.0.0",
+  "version": "1.0.0",
   "description": "Desafio da Cadastra para novos colaboradores",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/cross-env SERVER_API=http://localhost:5000 npm-run-all --parallel dev server",
+    "start": "cross-env SERVER_API=http://localhost:5000 npm-run-all --parallel dev server",
     "start:gp": "npm-run-all --parallel dev server",
     "dev": "gulp",
     "server": "json-server ./db.json --port 5000"
@@ -19,20 +19,27 @@ n  "version": "1.0.0",
   },
   "homepage": "https://github.com/Cadastra-Next-Gen-Company/desenvolvedor-cadastra#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.43.4",
-    "ts-loader": "^9.4.1",
-    "typescript": "^4.9.3",
-    "webpack": "^5.62.1"
+    "@types/axios": "0.14.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.0.5",
+    "browser-sync": "^2.29.0",
+    "del": "6.0.0",
+    "file-loader": "6.2.0",
+    "gulp": "4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "npm-run-all": "4.1.5",
+    "sass": "1.45.0",
+    "ts-loader": "9.4.1",
+    "typescript": "^4.9.5",
+    "webpack": "5.64.0"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "cross-env": "^7.0.3",
-    "json-server": "^0.17.0"
+    "gulp-autoprefixer": "^7.0.0",
+    "json-server": "^0.17.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

@@ -1,5 +1,6 @@
 export interface Product {
-  id: string;
+  amount: number;
+  id: number;
   name: string;
   price: number;
   parcelamento: Array<number>;

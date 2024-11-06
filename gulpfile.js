@@ -1,5 +1,3 @@
-const path = require("path");
-
 const { series, src, dest, parallel, watch } = require("gulp");
 const webpack = require("webpack");
 const del = require("del");
@@ -12,8 +10,8 @@ const webpackConfig = require("./webpack.config.js");
 
 const paths = {
   scripts: {
-    src: "src/ts/index.ts",
-    watch: "src/ts/**/*.ts",
+    src: "src/index.tsx",
+    watch: "src/**/*.tsx",
   },
   styles: {
     src: "src/scss/main.scss",
@@ -92,7 +90,7 @@ const dev = () => {
     "change",
     browserSync.reload
   );
-  watch(paths.styles.src, { ignoreInitial: false }, styles);
+  watch("src/scss/**/*.scss", { ignoreInitial: false }, styles);
   watch(paths.img.src, { ignoreInitial: false }, img);
   watch(paths.html.src, { ignoreInitial: false }, html).on(
     "change",

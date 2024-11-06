@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Camiseta Mescla",
       "price": 28.8,
       "parcelamento": [3, 9.33],
@@ -11,7 +11,7 @@
       "date": "1995-12-17"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Saia em couro",
       "price": 398.0,
       "parcelamento": [5, 30],
@@ -21,7 +21,7 @@
       "date": "1996-12-17"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Cardigan Tigre",
       "price": 398.8,
       "parcelamento": [5, 30],
@@ -31,7 +31,7 @@
       "date": "1997-12-17"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Cardigan off white",
       "price": 99.9,
       "parcelamento": [3, 33.3],
@@ -41,7 +41,7 @@
       "date": "1998-12-17"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Body Leopardo",
       "price": 129.9,
       "parcelamento": [3, 43.43],
@@ -51,7 +51,7 @@
       "date": "1999-12-17"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Casaco Pelos",
       "price": 398.0,
       "parcelamento": [5, 30],
@@ -61,7 +61,7 @@
       "date": "1999-12-16"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Cropped Stripes",
       "price": 120.0,
       "parcelamento": [3, 40],
@@ -71,7 +71,7 @@
       "date": "2000-12-17"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Camisa Transparente",
       "price": 398.0,
       "parcelamento": [5, 30],
@@ -81,7 +81,7 @@
       "date": "2000-11-17"
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
@@ -91,7 +91,7 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
+      "id": 10,
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
@@ -101,7 +101,7 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
+      "id": 11,
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
@@ -111,7 +111,7 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
+      "id": 12,
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
@@ -121,7 +121,7 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
+      "id": 13,
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
@@ -131,7 +131,7 @@
       "date": "2003-12-17"
     },
     {
-      "id": "9",
+      "id": 14,
       "name": "Pochete Clutch",
       "price": 99.0,
       "parcelamento": [3, 33],
